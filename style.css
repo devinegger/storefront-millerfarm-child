@@ -1,0 +1,705 @@
+/*
+Theme Name: Storefront Miller Farms Child
+Description: Storefront Child Theme for Miller Farms
+Author: Dreamscape Development
+Template: storefront
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: storefront-millerfarms-child
+*/
+
+/*
+************** COLORS **************
+*/
+
+
+
+
+
+/*
+**
+************** ELEMENTS **************
+**
+*/
+
+body {
+    background-color: #f7f7f7;
+}
+
+#page {
+    max-width: 1360px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+img {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+ul {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+ul li {
+    padding: 10px 0;
+}
+
+ul.check li:before {
+	font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 1em;
+    display: block;
+    float: left;
+    margin-top: 2%;
+    padding-bottom: 40px;
+  	content: '\f00c';
+ 	padding-right: 15px;
+}
+
+th, tr {
+    border-bottom: 1px solid #946b3e;
+}
+
+th {
+    color: #43260a !important;
+    letter-spacing: .1em;
+    font-size: 1.2em;
+}
+
+i {
+     color: #3075BA; 
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin: 15px 0;
+    letter-spacing: .05em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+h5 {
+    font-size: 1.3em;
+    color: #00AA4A !important;
+}
+
+blockquote {
+    border-left: 3px solid #00AA4A;
+    color: #3075BA;
+}
+
+a {
+    color: #946b3e;
+    font-size: 1.2em;
+}
+
+a:hover, a:focus {
+    color: #d4b493;
+    text-decoration: none !important;
+}
+
+a.box-button {
+	border: 2px solid;
+    padding: 8px;
+}
+
+a.box-button:hover,
+a.box-button:focus {
+	border: 3px solid;
+	font-weight: 600;
+}
+
+.button {
+    background-color: #981b1e !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+}
+
+.button:hover,
+.button:focus  {
+    text-decoration: none !important;
+    background-color: #ffc210 !important; 
+    color: #000 !important;
+}
+
+a.added_to_cart, 
+a.button.checkout {
+    background-color: #52361b !important;
+    color: #ffffff !important;
+    border-radius: 5px;
+}
+
+a.added_to_cart:focus,
+a.added_to_cart:hover, 
+a.button.checkout:focus,
+a.button.checkout:hover {
+    background-color: #43260a !important;
+    color: #ffffff !important;
+}
+
+.button.alt {
+    background-color: #52361b !important;
+    color: #ffffff !important;
+}
+
+.button.alt:hover,
+.button.alt:focus {
+    background-color: #ffc210 !important;
+    color: #000 !important;
+}
+
+
+/*
+**
+************** HELPER CLASSES **************
+**
+*/
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+/*  <span class="dot"> */
+.dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    display: block;
+    float: left;
+    margin: 7px 10px 20px 0;
+}
+
+.large {
+    font-size: 1.5em;
+}
+
+.dark {
+    color: #6d615a;
+}
+
+.parallax {
+    background-size: cover !important; 
+}
+
+.overlay {
+	background-color: rgba(39, 39, 39, 0.64);
+    color: #fff !important;
+    padding: 5%;
+	width: 100%;
+	text-shadow: 2px 2px 6px #222;
+}
+
+.fat_bottom {
+    padding-bottom: 30px;
+}
+
+ul.check li:before {
+    content: "\f046" !important;
+}
+
+
+/* 
+**
+************** SITE CONTENTS **************
+**
+*/
+
+.site-header {
+    width: 100%;
+	background-image: url('img/textures/dark-tire.png') !important;
+	background-color: #d4b493 !important;
+    margin: 0 auto;
+    padding-top: 0;
+    border-bottom: 2px solid #946b3d;
+}
+
+.woocommerce-active .site-header .col-full {
+    margin-right: 0;
+}
+
+.woocommerce-active .site-header .main-navigation {
+	margin-right: 0;
+}
+
+.main-navigation ul li {
+    padding: 0;
+}
+
+.main-navigation ul.nav-menu>li>a {
+    padding: .5em;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: #432608;
+}
+
+.main-navigation ul.nav-menu>li>a:hover,
+.main-navigation ul.nav-menu>li>a:focus {
+    color: #a2580a;
+}
+
+.main-navigation ul ul li {
+    border-top: 2px solid #946b3e;
+    background-color: #f9eada !important;
+}
+
+.main-navigation ul ul li>a {
+    color: #43260a !important;
+}
+
+.site-header ul.menu li.current-menu-item > a {
+    color: #a2580a;
+}
+
+.storefront-secondary-navigation.woocommerce-active .site-header .site-branding {
+    width: 245px;
+}
+
+button.menu-toggle, button.menu-toggle:hover {
+    background-color: #f9eada;
+    color: #52361b;
+}
+
+.handheld-navigation ul ul li {
+    background-color: inherit !important;
+}
+
+.main-navigation ul li:hover > a {
+    color: #946b3e;
+}
+
+.dropdown-toggle::after {
+    content: "" !important;
+}
+
+.handheld-navigation ul.menu li button::after {
+    content: "";
+}
+
+.storefront-handheld-footer-bar ul li {
+    padding: 0 !important;
+}
+
+.storefront-handheld-footer-bar ul li>a {
+    background-color: #f9eada;
+    color: #52361b;
+}
+
+.storefront-handheld-footer-bar ul li.cart .count {
+    background-color: #981b1e;
+}
+
+.carousel-item {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.carousel-indicators {
+	margin-bottom: 0;
+}
+
+.carousel-indicators li {
+    width: 14px;
+    border-radius: 7px;
+    height: 14px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.front-page-section .col-md-6 {
+    padding: 0 !important;
+    margin: 1% !important;
+}
+
+.window {
+    padding: 10%;
+    background: rgba(0,0,0,.4);
+    font-size: 1.2em;
+}
+
+.window h3 {
+    font-weight: 600px;
+}
+
+.window h3,
+.window p,
+.window a {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 5px #333 !important;
+}
+
+/* this is a fix for bootstrap messing up the storefront my account page */
+#customer_login>.u-column1,
+#customer_login>.u-column2,
+.woocommerce-Addresses>.u-column1,
+.woocommerce-Addresses>.u-column2  {
+    max-width: 100% !important;
+}
+
+.site-content.not-home {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* this is a fix for bootstrap messing up the storefront customer details on order page */
+#customer_details>.col-1,
+#customer_details>.col-2  {
+    max-width: 100% !important;
+}
+
+/* this is a fix for bootstrap messing up the storefront 404 page */
+.error404 .fourohfour-columns-2 .col-1  {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.site-footer {
+	width: 100%;
+	background-image: url('img/soil-bg.jpg') !important;
+	background-repeat: no-repeat;
+	background-color: #623c21 !important;
+	padding: 0;
+	color: #ffffff;
+	max-width: 1732px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* this is a fix for bootstrap messing up the storefront footer */
+.footer-widgets {
+    max-width: 95% !important;
+    margin: 0 auto;
+    padding-top: 7em;
+}
+
+.widget .widget-title {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.widget_recent_entries ul li {
+    padding-left: 0;
+}
+
+.widget_recent_entries ul li::before {
+    content: none;
+}
+
+.site-info {
+    padding: .5em 1em;
+    text-align: center;
+    background-color: #4a2e1d  !important;
+}  
+
+table th {
+    background-color: #d4b493;
+}
+
+table tbody tr:nth-child(2n) td{
+    background-color: #fffcf8;
+}
+
+table.cart .product-thumbnail img {
+    max-width: 10em;
+}
+
+.order_details {
+    background-color: #fbebda;
+}
+
+.order_details:before, .order_details:after {
+    background: -webkit-linear-gradient(transparent 0,transparent 0),
+        -webkit-linear-gradient(135deg,#f9eada 33.33%,transparent 33.33%),
+        -webkit-linear-gradient(45deg,#f9eada 33.33%,transparent 33.33%);
+} 
+
+.order_details > li {
+    border-bottom: 2px dashed #d4b493;
+}
+
+#payment .payment_methods > li .payment_box, 
+#payment .place-order {
+    background-color: #fffcf8!important;
+}
+
+#payment .payment_methods > li:not(.woocommerce-notice) {
+    background-color: #f9eada !important;
+}
+
+.input-text {
+    background-color: #f9eada !important;
+}
+
+.input-text:focus {
+    background-color: #fffcf8 !important;
+}
+
+.contact-box {
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f9eada!important;
+}
+
+.contact-box .widget,
+.contact-box form {
+    margin: 0;
+}
+
+.contact-box label {
+    max-width: 100%;
+    width: 100%;
+}
+
+.contact-box input,
+.contact-box textarea {
+    background-color: #fefefe;
+    max-width: 100%;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #52361b !important;
+    color: #ffffff !important;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background-color: #c59a6a !important;
+    color: #52361b !important;
+}
+
+#mc_embed_signup label {
+    color: #52361b !important;
+    font-size: 1.5em !important;
+}
+
+.footer-logo {
+    margin-top: -50px !important;
+}
+
+#secondary h2 {
+    color: #52361b;
+}
+
+.widget .widget-title {
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+.widget-area .widget a {
+    color: #946b3e;
+    text-decoration: none;
+}
+
+.widget-area .widget a:hover,
+.widget-area .widget a:focus {
+    color: #d4b493;
+}
+
+
+.widget ul {
+    padding-left: 4%;
+}
+
+.widget ul li {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.widget_nav_menu ul li::before,
+.widget_categories ul li::before {
+    content: none;
+}
+
+ul.menu li.current-menu-item>a {
+    color: #946b3e;
+}
+
+.form-row-wide .woocommerce-input-wrapper,
+#order_comments_field .woocommerce-input-wrapper {
+    width: 100%;
+}
+
+
+/* 
+**
+************** MEDIA QUERIES **************
+**
+*/
+
+@media screen and (min-width: 960px) {
+	.carousel-item {
+		background-position-y: -140px !important;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+    .col-full {
+        max-width: 95% !important;
+    }
+    
+    .storefront-primary-navigation {
+        clear: none;
+        float: left;
+        max-width: 70%;
+        display: block;
+        margin-top: 50px;
+    }
+    
+    .woocommerce-active .site-header .main-navigation {
+        width: 100%;
+    }
+    
+    .storefront-secondary-navigation.woocommerce-active .site-header .site-branding {
+        float: left;
+        margin-right: 0;
+        position: relative;
+    }
+    
+    .site-header .custom-logo-link {
+        display: block;
+        margin-bottom: 0;
+        position: absolute;
+        left: 30px;
+        top: -10px;
+    }
+    
+    .site-branding .site-description {
+        margin: 0;
+        display: block;
+        position: absolute;
+        color: #432608;
+        top: 5px;
+        left: 280px;
+        width: 600px;
+        font-size: 2em;
+        font-family: 'Lobster', cursive;
+    } 
+    
+    
+    .carousel-content {
+		min-height: 400px;
+	}
+    
+    .front-page-section .col-md-6 {
+        max-width: 48% !important;
+    } 
+    
+    .woocommerce-breadcrumb {
+        margin: 0 0 4em 240px !important;  
+        padding: 1em 0 !important;
+    }
+    
+    .not-home {
+        max-width: 95%;
+        margin: 0 auto;
+    }  
+    
+    #wc-stripe-new-payment-method {
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+    
+    #wc-stripe-new-payment-method>input {
+        width: 90%;
+    }
+    
+    .storefront-handheld-footer-bar {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    
+    .site-branding .site-description {
+        font-size: 1.8em;
+    }
+    
+    .main-navigation ul.nav-menu>li>a {
+        padding: .3em;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    
+	.menu-toggle {
+    	background-color: #432608;
+    	color: #ffffff;
+    	border-color: #432608;
+    	margin: 8em 1em 0 0;
+    }
+    
+    .carousel-content {
+		min-height: 260px !important;
+		background-position-y: -100px !important;
+	}
+    
+    .woocommerce-breadcrumb {
+        margin: 0 0 4em 260px !important;  
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #page {
+        font-size: .9em;
+    }
+    
+    .front-page-logo {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .site-header .custom-logo-link {
+        margin-left: 10px;
+    }
+    
+    .woocommerce-breadcrumb {
+        margin: 0 0 4em !important;  
+    }
+    
+    .front-page-section .col-md-6 {
+        margin: 1% 0 !important;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+	.carousel-indicators li {
+		width: 10px;
+		height: 10px;
+		border-radius: 5px;
+		margin-left: 7px;
+		margin-right: 7px;
+	}
+	.carousel-content {
+		min-height: 200px !important;
+	}	
+}
+.site-description {
+	width:420px;
+}
